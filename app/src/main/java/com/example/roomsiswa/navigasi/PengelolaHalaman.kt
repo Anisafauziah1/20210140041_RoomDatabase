@@ -17,6 +17,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.roomsiswa.R
 import com.example.roomsiswa.ui.theme.halaman.DestinasiEntry
+import com.example.roomsiswa.ui.theme.halaman.EntrySiswaScreen
 
 @Composable
 fun SiswaApp(navController: NavController = rememberNavController()){
