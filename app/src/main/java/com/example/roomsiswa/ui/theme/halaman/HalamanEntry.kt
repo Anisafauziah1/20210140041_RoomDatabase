@@ -2,6 +2,7 @@ package com.example.roomsiswa.ui.theme.halaman
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -70,6 +71,10 @@ fun EntrySiswaBody(
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_Large)),
         modifier = modifier.padding(dimensionResource(id = R.dimen.padding_medium))
     ){
-
+        FormInputSiswa(
+            detailSiswa = uiStateSiswa.detailSiswa,
+            onSiswaValueChange = onSiswaValueChange,
+            modifier = Modifier.fillMaxWidth()
+        )
     }
 }
