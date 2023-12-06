@@ -77,7 +77,7 @@ fun EntrySiswaBody(
     ){
         FormInputSiswa(
             detailSiswa = uiStateSiswa.detailSiswa,
-            onSiswaValueChange = onSiswaValueChange,
+            onValueChange = onSiswaValueChange,
             modifier = Modifier.fillMaxWidth()
         )
         Button(
@@ -91,3 +91,11 @@ fun EntrySiswaBody(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormInputSiswa(
+    detailSiswa: DetailSiswa,
+    modifier: Modifier = Modifier,
+    onValueChange: (DetailSiswa) -> Unit ={},
+    enabbled: Boolean = true
+){}
